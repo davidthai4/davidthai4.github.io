@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #dadada;
+    font-family: Arial, sans-serif;
+}
+
+body.light-theme {
+    background-color: #dadada;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: rgb(16, 16, 16);
+    color: #f5f5f5;
+}
+
+/* Extra styles for dark mode */
+body.dark-theme h1,
+body.dark-theme .education h2,
+body.dark-theme .work-experience h2 {
+    color: #f5f5f5;
+}
+body.dark-theme .topic-header-line {
+    border-top: 2px solid #f5f5f5;
+}
+
+/* Center the content vertically and horizontally */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+/* Style the header section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style the profile picture */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+    margin-bottom: 10px;
+}
+
+/* Style the name */
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+/* Style the social links */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Style the education and work experience sections */
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the section headings */
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.topic-box-description {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.topic-box-icon {
+    align-self: center;
+    border-radius: 50%;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topic-header-line {
+    width: 20%;
+    border: none;
+    border-top: 1.5px solid #333;
+    margin: 0px auto;
+}
